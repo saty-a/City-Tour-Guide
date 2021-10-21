@@ -12,7 +12,7 @@
         >
 
         <activity
-            android:name=".cityActivity"
+            android:name=".CityActivity"
             android:exported="true" />
         <activity android:name=".MainActivity">
             <intent-filter>

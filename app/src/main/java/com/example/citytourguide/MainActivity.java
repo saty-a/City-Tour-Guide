@@ -1,13 +1,11 @@
 package com.example.citytourguide;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -59,8 +57,8 @@ public class MainActivity extends AppCompatActivity {
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id)
                 {
                     int pos = Integer.parseInt(String.valueOf(position));
-                    Intent i =new Intent(MainActivity.this,cityActivity.class);
-                    i.putExtra(cityActivity.Position,pos);
+                    Intent i =new Intent(MainActivity.this, CityActivity.class);
+                    i.putExtra(CityActivity.Position,pos);
 
                //     Toast.makeText(getApplicationContext(),"Hello Javatpoint"+pos,Toast.LENGTH_SHORT).show();
                     startActivity(i);
